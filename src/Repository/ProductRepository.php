@@ -19,6 +19,11 @@ class ProductRepository extends ServiceEntityRepository
         parent::__construct($registry, Product::class);
     }
 
+    public function findAeg()
+    {
+        return $this->findBy(['name' => 'Lednice AEG']);
+    }
+
 //    /**
 //     * @return Product[] Returns an array of Product objects
 //     */
